@@ -360,6 +360,20 @@ html {
 }
 
 
+.coding-ninja{
+    text-align: center;
+}
+
+.me{
+    text-decoration: none;
+    color: #000;
+}
+
+.me:hover{
+    color: #755CDE;
+}
+
+
 /* MEDIA RESPONSIVITY FOR TABLETS */
 @media screen and (max-width: 900px){
 

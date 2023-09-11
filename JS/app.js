@@ -3,6 +3,9 @@
 const navbarLinks = document.getElementById("navbar-links");
 const openButton = document.getElementById("open");
 const closeButton = document.getElementById("close");
+const day = document.querySelector(".day-of-the-week");
+const utc = document.querySelector(".utc-time-in-milliseconds");
+const currentDay = new Date();
 
 openButton.addEventListener("click", function () {
   if ((openButton.style.display = "block")) {
@@ -24,39 +27,19 @@ closeButton.addEventListener("click", function () {
   }
 });
 
-// IMAGE SLIDER SECTION
+const days = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday ",
+  "Thursday",
+  "Friday",
+  "Saturday",
+];
 
-const leftButton = document.querySelector(".left-button");
-const rightButton = document.querySelector(".right-button");
-const imageContainer = document.querySelector(".image-container");
-const myWork = document.querySelectorAll(".image-container img");
-let activeButton;
-let counter = 0;
-const size = window.innerWidth < 640 ? 300 : 540;
+console.log(days[1]);
 
-imageContainer.style.transform = "translateX(" + -size * counter + "px)";
-
-rightButton.addEventListener("click", () => {
-  console.log(size);
-  if (counter >= myWork.length - 1) return;
-  imageContainer.style.transition = "transform 0.5s ease-in-out";
-  counter++;
-  imageContainer.style.transform = "translateX(" + -size * counter + "px)";
-  leftButton.disabled = false;
-  if (counter === myWork.length - 1) {
-    rightButton.disabled = true;
-  }
-});
-
-leftButton.addEventListener("click", () => {
-  if (counter <= 0) return;
-  imageContainer.style.transition = "transform 0.5s ease-in-out";
-  counter--;
-  imageContainer.style.transform = "translateX(" + -size * counter + "px)";
-  rightButton.disabled = false;
-  if (counter === 0) {
-    leftButton.disabled = true;
-  }
-});
+day.innerHTML = `${days[currentDay.getDay()]}`;
+utc.innerHTML = `${currentDay.getUTCMilliseconds()}`;
 
 AOS.init();

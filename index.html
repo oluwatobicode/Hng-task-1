@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Portfoilo</title>
+        <title>HNG-TASK-1</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,18 +31,28 @@
                     <ul id="navbar-links" class="desktop-links">
                         <li class="josh-links"><a href="#skills">Skills</a></li>
                         <li class="josh-links"><a href="#about">About</a></li>
-                        <li class="josh-links"><a href="#my-works">Work</a></li>
+                       
                         <li class="josh-links"><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </section>
 
+         <!-- TIME -->
+         <section>
+            <p  data-testid="currentDayOfTheWeek">Current Day :
+                <span class="day-of-the-week" data-testid="currentDayOfTheWeek"></span>
+            </p>
+            <p  data-testid="currentUTCTime"> Current UTCTime:
+                <span class="utc-time-in-milliseconds" data-testid="currentUTCTime"></span>
+            </p>
+        </section>
+
         <!-- HERO-INTRO -->
 
         <section id="josh-main">
             <div class="hero">
-                <h1 class="josh-intro-1">Design solutions made easily</h1>
+                <h1 class="josh-intro-1">Solutions made easily</h1>
                 <p class="josh-intro-2">With over ten years of experience in various design disciplines, I’m your one-stop shop for your design needs.</p>
             </div>
 
@@ -51,16 +61,16 @@
                 <div class="illustartion one">
                     <img src="Images/pattern-graphic-design.svg" alt="pattern-graphic-design" class="skill-1">
                     <p>
-                        Graphic Design
+                      FrontEnd
                     </p>
                 </div>
                 <div class="illustartion two">
                     <img src="Images/pattern-ui-ux.svg" alt="pattern-ui-ux" class="skill-2">
-                    <p>UI/UX</p>
+                    <p>Backend</p>
                 </div>
                 <div class="illustartion  three">
                     <img src="Images/pattern-apps.svg" alt="pattern-apps" class="skill-3">
-                    <p>Apps</p>
+                    <p>AI/ML</p>
                 </div>
                 <div class="illustartion four">
                     <img src="Images/pattern-photography.svg" alt="pattern-photography" class="skill-4">
@@ -78,37 +88,27 @@
 
             <!-- NAME AND ABOUT SECTION -->
             <div class="josh" id="about">
+                <!-- SLACK DISPLAY PICTURE REQUIRMENT -->
                 <div class="josh-pic">
-                    <img src="Images/image-amy.webp" alt="Joshua Oluwaseun OPALEKE" class="josh-pix">
+                    <img src="Images/slack-display-picture.jpeg"  alt="Joshua Oluwaseun OPALEKE" class="josh-pix">
                 </div>
                 <div class="josh-introduction">
-                 <h1 class="josh-name" data-testid="Odetokun Treasure">Karin</h1>
-                 <h2 data-testid="Frontend">Product Designer</h2>
-                <p>Karin has over two years of experience developing SaaS products for a variety of use 
+
+                    <!-- SLACK NAME REQUIRMENT -->
+                 <h1 class="josh-name" data-testid="Odetokun Treasure">Odetokun Treasure</h1>
+
+                 <!-- TRACK REQUIRMENT -->
+                 <h2 data-testid="Frontend">Frontend</h2>
+                <p>Treasure has over two years of experience developing SaaS products for a variety of use 
                     cases and has advanced skills focused on creating and delivering the best product experience 
-                    and service through design and digital media.She is also good at graphic design, branding 
-                    and integrated marketing.
+                    and service through AI/ML and Frontend development.He is also good at photography, motion graphics 
+                    and Product Design.
                 </p>
-                <button class="josh-cv"><a href="mailto:thejoshuaopaleke@gmail.com" class="josh-link">CV/RESUME</a></button>
+                <button class="josh-cv"><a href="#" class="josh-link">CV/RESUME</a></button>
                 </div>
             </div>
 
-            <!-- WORK -->
-            <div class="my-work" id="my-works">
-                <div class="image-container">
-                    <img src="Images/Day 1.1.jpg" alt="sign-up-page" class="project-0" width="300" height="300">
-                    <img src="Images/Day 3.jpg" alt="Cash-pay landing page" class="project-1" width="300" height="300">
-                    <img src="Images/Day 7.jpg" alt="Setting-page" class="project-2" width="300" height="300">
-                    <img src="Images/Day 15.jpg" alt="Analytics chart" class="project-3" width="300" height="300">
-                    <img src="Images/Day 17.jpg" alt="Tracker App" class="project-4"width="300" height="300">
-                    <img src="Images/Day 8.jpg" alt="Error 404 page" class="project-5" width="300" height="300">
-                </div>
-    
-                <div class="arrows">
-                    <img src="Images/icon-arrow-left.svg" class="left-button" alt="icon-arrow-left" class="arrow-1">
-                    <img src="Images/icon-arrow-right.svg" class="right-button" alt="icon-arrow-right" class="arrow-2">
-                </div>
-            </div>
+            
 
             <!-- CONTACT US -->
             <div class="contact-me" id="contact">
@@ -137,14 +137,12 @@
             </footer>
         </section>
 
+        <!-- GITHUB REQUIRMENT -->
+
         <section>
-            <p><a href="" data-testid="">Coding Ninja</a></p>
+            <p class="coding-ninja" data-testid="https://github.com/Oluwatobiiiiii/Hng-task-1"><a class="me" href="https://github.com/Oluwatobiiiiii/Hng-task-1" data-testid="https://github.com/Oluwatobiiiiii/Hng-task-1">Coding Ninja</a></p>
         </section>
-
-        <!-- THE POP MODEL BOX -->
-        <!-- <img id="myImg" src="Images/image-slide-3.jpg" alt="Trolltunga, Norway" width="500" height="300"> -->
-
-        <!-- The Modal  -->    
+ 
         <script src="JS/app.js" async defer>
             
         </script>
